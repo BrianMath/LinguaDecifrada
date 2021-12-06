@@ -1,0 +1,40 @@
+/* ----- Imagens ----- */
+.imgPequena {
+    margin: 5px auto;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 425px) {
+    img {
+        width: 275px;
+        height: 225px;
+    }
+
+    .overflowAuto img {
+        width: 500px;
+        height: 550px;
+    }
+
+    #combRepeticao .overflowAuto img {
+        width: 380px;
+        height: 90px;
+    }
+
+    .imgPequena {
+        width: 175px;
+        height: 125px;
+    }
+
+    .imgLarga {
+        width: 250px;
+        height: 60px;
+    }
+
+    .imgLarga2 {
+        width: 300px;
+        height: 90px;
+    }
+}

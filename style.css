@@ -1,0 +1,135 @@
+/* ----- Global ----- */
+a, a:visited {
+    color: #fff;
+    text-shadow: 1px -2px 3px black;
+}
+
+a:hover {
+    text-decoration: none;
+    text-shadow: none;
+}
+
+body {
+    background: rgb(156,229,254);
+    background: -moz-radial-gradient(circle, rgba(156,229,254,1) 0%, rgba(77,168,241,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(156,229,254,1) 0%, rgba(77,168,241,1) 100%);
+    background: radial-gradient(circle, rgba(156,229,254,1) 0%, rgba(77,168,241,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9ce5fe",endColorstr="#4da8f1",GradientType=1);
+    color: #000;
+    font-weight: 500;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-family: Roboto, Verdana, sans-serif;
+}
+
+img {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.overflowAuto {
+    overflow: auto;
+}
+
+iframe {
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+}
+
+#botoes {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px;
+    gap: 5px;
+}
+
+button {
+    font-family: Roboto, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    width: 100px;
+    height: 50px;
+}
+
+/* ----- Cabeçalho ----- */
+header {
+    background-color: #01000d;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+
+    background-color: #0364b1;
+    padding: 15px;
+}
+
+header a:hover {
+    text-decoration: underline;
+
+    background-color: #16578a;
+}
+
+@media screen and (min-width: 600px) {
+    nav li {
+        float: left;
+    }
+}
+
+/* ----- Conteúdo principal ----- */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 7px;
+}
+
+p {
+    padding: 0px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        padding: 7px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    p {
+        padding: 10px;
+    }
+}
+
+/* ----- Rodapé ----- */
+footer {
+    background-color: #01000d;
+    color: #fff;
+    padding: 5px;
+}

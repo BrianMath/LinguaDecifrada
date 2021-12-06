@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Probabilidade - Matemática</title>
+
+    <!-- meta tags globais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brian, Ingrid, Iury, Thais e Vitor">
+    <meta name="description" content="Qual a probabilidade de acertar tudo no Enem? Vem aprender a calcular 🤓">
+
+    <!-- Meta tags para Whatsapp -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Língua Decifrada">
+    <meta property="og:description" content="Qual a probabilidade de acertar tudo no Enem? Vem aprender a calcular 🤓">
+    <meta property="og:url" content="https://brianmath.github.io/LinguaDecifrada/pages/probabilidade.html">
+    <meta property="og:image" content="https://i.imgur.com/vLSaV1Y.jpg">
+    <meta property="og:image:alt" content="Logo do site">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css"> <!-- Global -->
+    <link rel="stylesheet" href="../../styles/matematica.css"> <!-- Local -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">PÁGINA INICIAL</a></li>
+                <li><a href="../matematica.html">MATEMÁTICA</a></li>
+                <li><a href="geometria.html">GEOMETRIA</a></li>
+                <li><a href="probabilidade.html">PROBABILIDADE</a></li>
+                <li><a href="combinatoria.html">COMBINATORIA</a></li>
+                <li><a href="../portugues.html">PORTUGUÊS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="explicacoes">
+            <h1>Probabilidade</h1>
+            <p>O estudo da probabilidade é de grande importância para a tomada de decisões em nossa sociedade. Conhecemos como probabilidade a área da matemática que estuda a chance de um determinado evento acontecer.</p>
+            <p>A probabilidade conta com conceitos importantes, como experimento aleatório, evento, espaço amostral, e eventos equiprováveis. O valor da probabilidade é sempre um número entre 0 e 1 ou uma porcentagem entre 0% e 100%, e é calculado com base na razão entre os casos favoráveis e os casos possíveis.</p>
+            <h2>Definições básicas</h2>
+
+            <section id="formula">
+                <h3>Fórmula da probabilidade</h3>
+                <p>Em um fenômeno aleatório, as possibilidades de ocorrência de um evento são igualmente prováveis. Sendo assim, podemos encontrar a probabilidade de ocorrer um determinado resultado através da divisão entre o número de eventos favoráveis e o número total de resultados possíveis:</p>
+                <img src="../../images/formulaProb.png" alt="Fórmula da probabilidade" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Sendo <b>P(A):</b> probabilidade da ocorrência de um evento A; <b>n(A):</b> número de casos favoráveis ou, que nos interessam (evento A); <b>n(Ω):</b> número total de casos possíveis.</p>
+                <p>O resultado calculado também é conhecido como probabilidade teórica. Para expressar a probabilidade na forma de porcentagem, basta multiplicar o resultado por 100.</p>
+                <ul><strong>Observações:</strong>
+                    <li>A probabilidade pode ser representada como fração, como porcentagem ou como número decimal.</li>
+                    <li>A probabilidade é sempre um número decimal entre 0 e 1, ou uma porcentagem entre 0% e 100%.</li>
+                    <li>Se P(A) = 0 então A é um evento impossível.</li>
+                    <li>Se P(A) = 1 então A é um evento certo.</li>
+                </ul>
+            </section>
+
+            <section id="expAleatorio">
+                <h3>Experimento aleatório</h3>
+                <p>É o experimento que, ao ser realizado várias vezes nas mesmas condições, ainda sim, gera um resultado imprevisível. Estamos cercados de experimentos aleatórios no nosso cotidiano, por exemplo, ao realizarmos o lançamento de um dado comum, ainda que seja possível calcular a chance de cada um dos resultados ocorrer, é impossível termos, com precisão, o resultado do lançamento. Ao lançarmos o dado uma vez e obtermos, por exemplo, 1 como resultado, ao realizarmos um novo lançamento, respeitando as mesmas condições, o resultado continua sendo imprevisível, ele pode ou não ser 1 novamente.</p>
+            </section>
+
+            <section id="pontoAmostral">
+                <h3>Ponto amostral</h3>
+                <p>Qualquer resultado possível de um experimento aleatório é denominado um ponto amostral. Usando ainda o exemplo do dado lançado, o lado que cairá para cima pode ser os números 1,2,3,4,5 ou 6, portanto, cada um deles é um ponto amostral.</p>
+                <ul>
+                    <li>Espaço amostral:
+                        <p>O espaço amostral é o conjunto de todos os resultados possíveis de um experimento aleatório, ou seja, dos pontos amostrais, e pode ser representado por conjuntos. Com relação a um dado que é jogado no chão e se deseja saber os possíveis lados que podem cair para cima, o espaço amostral desse experimento é o conjunto “n” : n = {1,2,3,4,5,6}. Portanto, os elementos 1,2,3,4,5,6 são os pontos amostrais.</p>
+                    </li>
+                    <li>Espaços equiprováveis:
+                        <p>É denominado espaço equiprovável quando todos os pontos amostrais possuem a mesma chance de ocorrer, como no caso de uma moeda lançada. A possibilidade de cair com a cara ou coroa voltada para cima é a mesma.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="evento">
+                <h3>Evento</h3>
+                <p>É qualquer subconjunto do espaço amostral. O evento pode ser representado utilizando-se notação de conjuntos, ou seja, por letras maiúscula. Geralmente o evento é o conjunto de resultados satisfatórios, ou seja, é um subconjunto do espaço amostral que contém os elementos com os quais se calcula a probabilidade</p>
+                <p><strong>Exemplo:</strong> Em um experimento aleatório, será sorteado ao acaso um estado brasileiro. Nesse experimento podemos tirar vários possíveis eventos, por exemplo, podemos pensar no resultado ser um estado do Sul, logo, meu evento pode ser representado pelo conjunto A: {Rio Grande do Sul, Paraná, Santa Catarina}. Outro possível evento é o conjunto de estados cujos nomes comecem com a letra s, nesse caso o evento será o conjunto B: {Santa Catarina, Sergipe, São Paulo}.</p>
+                <ul>
+                    <li><strong>Evento certo:</strong> É o que possui 100% de chance de ocorrer.
+                        <ul>
+                            <li><strong>Exemplo:</strong> Ao lançarmos um dado e observarmos, após a queda, sua face superior, um evento certo é que encontraremos nela um número menor que 7, logo, meu conjunto E será {1,2,3,4,5,6}, pois, ao lançar-se um dado, não existe outra opção a não ser um desses resultados, o que torna esse evento certo.</li>
+                        </ul>
+                    </li>
+            
+                    <li><strong>Evento impossível:</strong> É aquele que possui 0% de chance de ocorrer, ou seja, que não ocorrerá.
+                        <ul>
+                            <li><strong>Exemplo:</strong> Utilizando-se do mesmo experimento de lançamento de um dado comum, um evento impossível será obter-se um número maior que 6.</li>
+                        </ul>
+                    </li>
+            
+                    <li><strong>Eventos complementares:</strong> Os conjuntos de dois eventos formam todo o espaço amostral, sendo um evento complementar ao outro.
+                        <ul>
+                            <li><strong>Exemplo:</strong> No experimento lançar uma moeda, o espaço amostral é Ω = {cara, coroa}. Seja o evento A sair cara, A={cara}, o evento B sair coroa é complementar ao evento A, pois, B={coroa}. Juntos formam o próprio espaço amostral.</li>
+                        </ul>
+                    </li>
+            
+                    <li><strong>Eventos mutuamente exclusivos:</strong> Os conjuntos dos eventos não possuem elementos em comum. A intersecção entre os dois conjuntos é vazia.
+                        <ul>
+                            <li><strong>Exemplo:</strong> Seja o experimento lançar um dado, os seguintes eventos são mutuamente exclusivos -> <b>A:</b> ocorrer um número menor que 5, A={1, 2, 3, 4} e <b>B:</b> ocorrer um número maior que 5, B={6}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="probabCondicional">
+                <h3>Probabilidade condicional</h3>
+                <p>A probabilidade condicional relaciona as probabilidades entre eventos de um espaço amostral equiprovável. Nestas circunstâncias, a ocorrência do evento A depende ou está condicionada à ocorrência do evento B. A probabilidade do evento A dado o evento B é definida por:</p>
+                <img src="../../images/formulaProb2.png" alt="Fórmula da probabilidade condicional" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Onde o evento B não pode ser vazio.</p>
+                <p><strong>Exemplo:</strong> Em um encontro de colaboradores de uma empresa que atua na França e no Brasil, um sorteio será realizado e um dos colaboradores receberá um prêmio. Há apenas colaboradores franceses e brasileiros, homens e mulheres. Como evento de probabilidade condicional, podemos associar a probabilidade de sortear uma mulher (evento A) dado que seja francesa (evento B). Neste caso, queremos saber a probabilidade de ocorrer A (ser mulher), apenas se for francesa (evento B).</p>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="questionario">
+            <h2>Questionário sobre probabilidade</h2>
+
+            <p>Clique em "Iniciar" para carregar o questionário aqui na página. Caso prefira, você pode ir para a <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_aZ7VSKMhIQGsDBaGXozDBcUAZNfkG6pikA5nx-4I01zBvA/viewform?usp=sf_link" target="_blank" rel="noreferrer noopener">página do formulário</a> em vez disso.</p>
+
+            <div id="botoes">
+                <button onclick="iniciar(2)">Iniciar</button>
+                <button onclick="parar()">Parar</button>
+            </div>
+            
+            <div class="overflowAuto">
+                <iframe src="" width="100%" height="300px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvovido por: Brian, Ingrid, Iury, Thais e Vitor.</p>
+        <ul>Créditos
+            <li>
+                Ícones feitos por <a href="https://www.flaticon.com/br/autores/itim2101" title="itim2101" target="_blank" rel="noreferrer noopener"> itim2101 </a> from <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank" rel="noreferrer noopener">www.flaticon.com</a>
+            </li>
+            <li>
+                <a href="https://www.educamaisbrasil.com.br/enem/matematica/probabilidade" target="_blank" rel="noreferrer noopener">Educa Mais Brasil</a>
+            </li>
+            <li>
+                <a href="https://www.todamateria.com.br/probabilidade/" target="_blank" rel="noreferrer noopener">Toda matéria</a>
+            </li>
+            <li>
+                <a href="https://mundoeducacao.uol.com.br/matematica/estudo-das-probabilidades.htm" target="_blank" rel="noreferrer noopener">Mundo Educação</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

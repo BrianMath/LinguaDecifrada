@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Análise combinatória - Matemática</title>
+
+    <!-- meta tags globais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brian, Ingrid, Iury, Thais e Vitor">
+    <meta name="description" content="Vamos combinar que saber análise combinatória é obrigatório pro Enem, né? 🧐">
+
+    <!-- Meta tags para Whatsapp -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Língua Decifrada">
+    <meta property="og:description" content="Vamos combinar que saber análise combinatória é obrigatório pro Enem, né? 🧐">
+    <meta property="og:url" content="https://brianmath.github.io/LinguaDecifrada/pages/probabilidade.html">
+    <meta property="og:image" content="https://i.imgur.com/vLSaV1Y.jpg">
+    <meta property="og:image:alt" content="Logo do site">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css"> <!-- Global -->
+    <link rel="stylesheet" href="../../styles/matematica.css"> <!-- Local -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">PÁGINA INICIAL</a></li>
+                <li><a href="../matematica.html">MATEMÁTICA</a></li>
+                <li><a href="geometria.html">GEOMETRIA</a></li>
+                <li><a href="probabilidade.html">PROBABILIDADE</a></li>
+                <li><a href="combinatoria.html">COMBINATORIA</a></li>
+                <li><a href="../portugues.html">PORTUGUÊS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="explicacoes">
+            <h1>Análise combinatória</h1>
+            <p>A análise combinatória é a área da Matemática que tem como função estudar a quantidade de agrupamentos que podem ser formados a partir de um conjunto de valores. O foco é o estudo dos tipos de agrupamento, que são resolvidos pelo princípio fundamental da contagem. Esses agrupamentos são a permutação, a combinação e o arranjo. Cada tipo tem aplicações específicas, e o que determina qual deve ser usado é a situação em que se encontram e o objetivo da contagem.</p>
+            <p>Esse ramo da Matemática também exige domínio de uma operação específica, que é o fatorial de um número, representado pelo símbolo de exclamação – “!”. Calcular o fatorial de um número é encontrar o produto desse número pelos seus antecessores. Vale dizer também que o cálculo dos agrupamentos é de grande importância para a área de probabilidade, o que torna a análise combinatória um pré-requisito para quem deseja dominá-la a fundo.</p>
+            
+            <section id="pfc">
+                <h2>Princípio fundamental da contagem</h2>
+                <p>O princípio fundamental da contagem, conhecido também como princípio multiplicativo, é a base para os cálculos envolvendo contagem de reagrupamentos. Ainda que existam fórmulas específicas para calcular alguns casos de agrupamentos, elas surgem desse princípio, conhecido também como P.F.C. O princípio fundamental da contagem diz que:</p>
+                <cite>“Se uma decisão a pode ser tomada de n formas e uma decisão b pode ser tomada de m formas, e essas decisões são independentes, então o número de combinações possíveis entre essas duas decisões é calculado pela multiplicação n · m.”</cite>
+                <p><strong>Exemplo:</strong> Márcia vai viajar da cidade A para a cidade C, mas, durante o percurso, ela decidiu que passará pela cidade B para visitar alguns parentes. Sabendo que há 3 rotas para ir da cidade A para a cidade B, e que há 5 rotas para ir da cidade B para a cidade C, de quantas maneiras distintas Márcia pode fazer essa viagem? Há duas decisões a serem tomadas, d1 → rota entre as cidades A e B; e d2 → rota entre as cidades B e C. Assim a primeira decisão pode ser tomada de 3 maneiras, e a segunda, de 5 maneiras, logo, basta multiplicar 3 × 5 = 15.</p>
+            </section>
+            
+            <section id="fatorial">
+                <h2>Fatorial de um número</h2>
+                <p>Em problemas envolvendo análise combinatória, é bastante comum aparecer o cálculo do fatorial de um número, que nada mais é que a multiplicação de um número por todos os seus sucessores maiores que zero. Representamos o fatorial de um número n por n! (n fatorial). <b>n! = n*(n-1)*(n-2) * … * 3*2*1</b></p>
+                <p><strong>Exemplos:</strong> <b>6!</b> = 6*5*4*3*2*1 = 720; <b>8!</b> = 8*7*6*5*4*3*2*1 = 40.320</p>
+            </section>
+            
+            <section id="permutSimples">
+                <h2>Tipos de agrupamentos</h2>
+                <h3>Permutação simples</h3>
+                <p>Definimos permutação simples como o número de possibilidades que podemos organizar n elementos distintos em n posições, de forma que cada possibilidade seja diferente da ordem em que os elementos aparecem. A permutação simples pode ser calculada pela seguinte fórmula: Pn = n!</p>
+                <ul>
+                    <li><strong>Exemplo:</strong> Em uma eleição para prefeito existem 3 candidatos. Quais as possibilidades dos três candidatos no resultado da eleição?
+                        <ul><b>Solução</b>
+                            <li>Cada candidato na eleição pode ocupar três posições no resultado da eleição: eleito (primeiro lugar), segundo lugar e terceiro lugar. Assim, trata-se de um problema de permutação simples. Logo: P(3) = 3! = 3*2*1 = 6; 6 possibilidades que podem ocorrer no resultado da eleição.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>O resultado calculado também é conhecido como probabilidade teórica. Para expressar a probabilidade na forma de porcentagem, basta multiplicar o resultado por 100.</p>
+            </section>
+            
+            <section id="permutRepeticao">
+                <h3>Permutação com repetição</h3>
+                <p>Na permutação com repetição, na análise combinatória, os elementos do evento são repetidos, diferentemente da permutação simples. Podemos calcular este tipo de permutação utilizando a seguinte fórmula:</p>
+                <img src="../../images/permutRepeticao.png" alt="Permutação com repetição" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Onde <b>Pn:</b> é a permutação; <b>n!:</b> total de elementos do evento; <b>n1!*n2!*n3! * … * nk!:</b> elementos repetidos no evento.</p>
+                <ul>
+                    <li><strong>Exemplo:</strong> Quantos anagramas possuem a palavra CARRO? Podemos ver que duas letras se repetem. Então, tempos os seguintes dados no problema:
+                        <ul>
+                            <li><b>n:</b> 5 letras; </li>
+                            <li><b>n1:</b> 2 letras que se repetem.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="../../images/exempPermutRepet.png" alt="Exemplo de permutação com repetição" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Então, a palavra carro possui 60 anagramas.</p>
+            </section>
+            
+            <section id="arranjoSimples">
+                <h3>Arranjo simples</h3>
+                <p>Arranjo simples é uma forma de agrupar elementos de um conjunto de forma que a maneira a tomar os elementos seja diferente pela ordem e natureza dos elementos. Podemos calcular um arranjo simples utilizando a seguinte fórmula:</p>
+                <img src="../../images/arranjSimples.png" alt="Arranjo simples" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Onde <b>An,k:</b> é o arranjo; <b>n:</b> total de elementos do evento; <b>k:</b> total de agrupamentos, com k ≤ n;</p>
+                <ul>
+                    <li><strong>Exemplo:</strong> Quantos números de 3 algarismos podemos formar com o conjunto abaixo: A = {1, 2, 3, 5, 7 e 9}. Temos os seguintes dados:
+                        <ul>
+                            <li><b>n:</b> números de elementos;</li>
+                            <li><b>k:</b> quantidades de algarismos por número</li>
+                        </ul>
+                        Então:
+                    </li>
+                </ul>
+                <img src="../../images/exempArranjSimples.png" alt="Exemplo de arranjo simples" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Portanto, podemos formar até 120 número de três algarismos.</p>
+            </section>
+            
+            <section id="arranjRepeticao">
+                <h3>Arranjo com repetição</h3>
+                <p>Arranjo com repetição é utilizado quando a ordem dos elementos do evento é importante, sendo que cada elementos pode ser contado mais de uma vez. Podemos calcular arranjo com repetição utilizando a seguinte fórmula: An,k = nk</p>
+                <p>Onde: <b>An,k:</b> é o arranjo com repetição; <b>n:</b> total de elementos do evento; <b>k:</b> número de elementos escolhidos no evento.</p>
+                <ul>
+                    <li><strong>Exemplo:</strong> Seja o conjunto das vogais: A = {a, e, i, o, u} Se tomarmos o agrupamento de dois em dois, sendo um arranjo com repetição, quantos agrupamentos poderíamos fazer com as vogais do conjunto A? Temos os seguintes dados:
+                        <ul>
+                            <li><b>A:</b> {a, e, i, o, u};</li>
+                            <li><b>n:</b> 5;</li>
+                            <li><b>k:</b> 2.</li>
+                        </ul>
+                        <p>Logo <b>A5,2</b> = 5*2 = 25; poderíamos fazer 25 combinações diferentes.</p>
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="combSimples">
+                <h3>Combinação simples</h3>
+                <p>Utilizamos combinação simples quando a ordem dos elementos no evento não importa, porém, cada elemento pode ser contado somente uma vez. Calculamos uma combinação simples utilizando a seguinte fórmula:</p>
+                <img src="../../images/combSimples.png" alt="Combinação simples" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Onde <b>Cn,k:</b> é a combinação simples; <b>n:</b> total de elementos dos eventos; <b>k:</b> total de agrupamentos do evento, com k ≤ n.</p>
+                <ul>
+                    <li><strong>Exemplo:</strong> De quantas maneiras diferentes podemos separar 12 bolas de gudes de cores diferentes, colocando 3 bolas de gudes por pote? Temos os seguintes dados:
+                        <ul>
+                            <li><b>n:</b> 12 bolas de gudes;</li>
+                            <li><b>k:</b> 3 bolas de gudes por pote.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="../../images/exempCombSimples.png" alt="Exemplo de combinação simples" loading="lazy" width="420px" height="90px" class="imgLarga2">
+                <p>Podemos separar as 12 bolas de gudes distintas, com três em cada pote, de 220 formas diferentes.</p>
+            </section>
+            
+            <section id="combRepeticao">
+                <h3>Combinação com repetição</h3>
+                <p>Utilizamos a combinação com repetição quando a ordem dos elementos do evento não importa, porém, podemos escolher cada elemento mais de uma vez. Para calcular uma combinação com repetição usamos a seguinte fórmula:</p>
+                <img src="../../images/combRepeticao.png" alt="Combinação com repetição" loading="lazy" width="350px" height="90px" class="imgLarga">
+                <p>Onde <b>Cn,k:</b> é a combinação com repetição; <b>n:</b> é o total de elementos do evento; <b>k:</b> total de elementos escolhidos do evento.</p>
+                <ul>
+                    <li><strong>Exemplo:</strong> Uma loja decide sortear para os clientes 3 pares de sapatos das 10 melhores marcas do mercado. De quantas formas o ganhador do prêmio pode escolher os três pares de sapatos da lista das 10 melhores marcas, sendo permitido repetições?
+                        <ul><strong>Resolução:</strong>
+                            <li>Temos os seguintes dados: <b>n:</b> 10 marcas; <b>k:</b> 3 pares de sapatos.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="overflowAuto">
+                    <img src="../../images/exempCombRepeticao.png" alt="Exemplo de combinação com repetição" loading="lazy" width="380px" height="90px">
+                </div>
+                <p>Portanto, o ganhador do prêmio poderá escolher de 220 maneiras distintas os três pares de sapatos das 10 melhores marcas.</p>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="questionario">
+            <h2>Questionário sobre análise combinatória</h2>
+
+            <p>Clique em "Iniciar" para carregar o questionário aqui na página. Caso prefira, você pode ir para a <a href="https://docs.google.com/forms/d/e/1FAIpQLSerYNti5pTANWLFNt_n88dNG7rGg2YaHncEhjOeq_crWj8MAA/viewform?embedded=true" target="_blank" rel="noreferrer noopener">página do formulário</a> em vez disso.</p>
+
+            <div id="botoes">
+                <button onclick="iniciar(3)">Iniciar</button>
+                <button onclick="parar()">Parar</button>
+            </div>
+            
+            <div class="overflowAuto">
+                <iframe src="" width="100%" height="300px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvovido por: Brian, Ingrid, Iury, Thais e Vitor.</p>
+        <ul>Créditos
+            <li>
+                Ícones feitos por <a href="https://www.flaticon.com/br/autores/itim2101" title="itim2101" target="_blank" rel="noreferrer noopener"> itim2101 </a> from <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank" rel="noreferrer noopener">www.flaticon.com</a>
+            </li>
+            <li>
+                <a href="https://www.todamateria.com.br/analise-combinatoria/" target="_blank" rel="noreferrer noopener">Toda matéria</a>
+            </li>
+            <li>
+                <a href="https://mundoeducacao.uol.com.br/matematica/analise-combinatoria.htm" target="_blank" rel="noreferrer noopener">Mundo Educação</a>
+            </li>
+            <li>
+                <a href="https://brasilescola.uol.com.br/matematica/analise-combinatoria.htm" target="_blank" rel="noreferrer noopener">Brasil Escola</a>
+            </li>
+            <li>
+                <a href="https://www.infoescola.com/matematica/analise-combinatoria/" target="_blank" rel="noreferrer noopener">InfoEscola</a>
+            </li>
+            <li>
+                <a href="https://www.preparaenem.com/matematica/analise-combinatoria.htm" target="_blank" rel="noreferrer noopener">PrePara Enem</a>
+            </li>
+            <li>
+                <a href="https://matematicabasica.net/analise-combinatoria/" target="_blank" rel="noreferrer noopener">Matemática Básica</a>
+            </li>
+            <li>
+                <a href="https://dicasdevestibular.blogosfera.uol.com.br/2021/03/18/a-analise-combinatoria-no-dia-a-dia/" target="_blank" rel="noreferrer noopener">Dicas de Vestibular</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
